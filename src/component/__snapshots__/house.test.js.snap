@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`house component unit tests house component should match the most up to date snapshot 1`] = `
+<div
+  className="property-container"
+  id="container-1"
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+>
+  <div
+    id="logo-container-1"
+    style={
+      Object {
+        "backgroundColor": "#ffe512",
+      }
+    }
+  >
+    <img
+      alt="agency logo"
+      id="logo-1"
+      src="http://i1.au.reastatic.net/agencylogo/XRWXMT/12/20120927204448.gif"
+    />
+  </div>
+  <img
+    alt="house"
+    id="main-image-1"
+    src="http://i2.au.reastatic.net/640x480/20bfc8668a30e8cabf045a1cd54814a9042fc715a8be683ba196898333d68cec/main.jpg"
+  />
+  <span
+    id="price-1"
+  >
+    $726,500
+  </span>
+  <button
+    className="button is-hidden"
+    id="move-btn-1"
+    onClick={[Function]}
+  >
+    add
+  </button>
+</div>
+`;

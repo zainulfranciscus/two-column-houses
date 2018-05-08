@@ -31,12 +31,16 @@ exports[`house component unit tests house component should match the most up to 
   >
     $726,500
   </span>
-  <button
-    className="button is-hidden"
-    id="move-btn-1"
-    onClick={[Function]}
+  <div
+    className="button-container"
   >
-    add
-  </button>
+    <button
+      className="button is-hidden"
+      id="move-btn-1"
+      onClick={[Function]}
+    >
+      add
+    </button>
+  </div>
 </div>
 `;

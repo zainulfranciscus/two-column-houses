@@ -88,17 +88,19 @@ export default class House extends Component {
             ? PRICE_HAS_NOT_BEEN_SPECIFIED
             : price}
         </span>
-        <button
-          className={
-            this.state.showButton
-              ? CSS_CLASS_FOR_BUTTON
-              : CSS_CLASS_FOR_BUTTON + " " + CSS_CLASS_FOR_HIDING_BUTTON
-          }
-          id={generateID(PREFIX_FOR_MOVE_BTN_ID, id)}
-          onClick={this.moveHouseToAColumn.bind(this)}
-        >
-          {buttonText}
-        </button>
+        <div className="button-container">
+          <button
+            className={
+              this.state.showButton
+                ? CSS_CLASS_FOR_BUTTON
+                : CSS_CLASS_FOR_BUTTON + " " + CSS_CLASS_FOR_HIDING_BUTTON
+            }
+            id={generateID(PREFIX_FOR_MOVE_BTN_ID, id)}
+            onClick={this.moveHouseToAColumn.bind(this)}
+          >
+            {buttonText}
+          </button>
+        </div>
       </div>
     );
   }

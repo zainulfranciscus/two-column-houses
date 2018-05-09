@@ -87,7 +87,7 @@ export class HouseColumn extends Component {
         />
         <Error hasErrored={hasErrored} />
         <div className="row">
-          <div className="columns small-6 header">Result</div>
+          <div className="columns small-6 header">Results</div>
           <div className="columns small-6 header">Saved Properties</div>
         </div>
         <div className="row">

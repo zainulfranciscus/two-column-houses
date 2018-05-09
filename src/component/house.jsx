@@ -10,7 +10,7 @@ export const PREFIX_FOR_HOUSE_CONTAINER = "container-";
 export const PREFIX_FOR_MOVE_BTN_ID = "move-btn-";
 export const CSS_CLASS_FOR_HIDING_BUTTON = "is-hidden";
 export const CSS_CLASS_FOR_BUTTON = "button";
-export const PRICE_HAS_NOT_BEEN_SPECIFIED = "$0";
+export const PRICE_HAS_NOT_BEEN_SPECIFIED = "Price has not been set";
 
 export function generateID(prefix, id) {
   return prefix + id;

@@ -19,7 +19,7 @@ describe("unit tests for left column reducer ", () => {
 
   it(
     "Given that list of houses has been successfully fetched, " +
-      "then this reducer should return houses under results, and saved column ",
+      "then this reducer should return houses under the left and right column ",
     () => {
       const action = fetchHouseActionBuilder()
         .withHouses(houses)
@@ -36,7 +36,7 @@ describe("unit tests for left column reducer ", () => {
     }
   );
 
-  it("Given that payload type is MOVE_TO_RIGHT_COLUMN then the reducer should add a house to the saved result column", () => {
+  it("Given that payload type is MOVE_TO_RIGHT_COLUMN then the reducer should add a house to the right column", () => {
     const houses = {
       results: [aHouse],
       saved: []
@@ -57,7 +57,7 @@ describe("unit tests for left column reducer ", () => {
 
   it(
     "Given that payload type is MOVE_HOUSE_TO_RIGHT_COLUMN then the reducer should not add the house to the right column" +
-      " because a house with a matching already exist in the right column",
+      " because a house with a matching id already exist in the right column",
     () => {
       const moveHouseAction = moveHouseActionBuilder()
         .withType(MOVE_HOUSE_TO_RIGHT_COLUMN)

@@ -40,14 +40,14 @@ describe("unit test for list of houses decorator", () => {
     expect(housesInRightColumn.length).toBe(0);
   });
 
-  it("Given a house then this method should remove house with a matching id from the right column", () => {
+  it("Should remove a house with a matching id from the right column", () => {
     const houses = listOfHousesDecorator(
       listOfHouses
     ).removeHouseFromTheRightColumn(aHouse);
     expect(listOfHousesDecorator(houses).rightColumnHouses().length).toBe(0);
   });
 
-  it("No house should be removed, because id given does not match id of the house", () => {
+  it("No houses should be removed from the right column because the given house id does  not match with any of the houses in the right column", () => {
     const houseToBeRemoved = Object.assign({}, aHouse);
     houseToBeRemoved.id = 5;
 

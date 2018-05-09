@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 export const ERROR_MESSAGE_ID = "error";
-export const ERROR_MESSAGE = "Unable to fetch JSON file";
+export const ERROR_MESSAGE = "Unable to fetch JSON file from the given URL";
 
 export default class Error extends Component {
   render() {

@@ -22,7 +22,8 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "e2eTest": "testcafe chrome ./integration-test/test.js"
+    "e2eTest:withWellFormedJson": "testcafe chrome ./integration-test/test.with.well.formed.json.js",
+    "e2eTest:withBadURL": "testcafe chrome ./integration-test/test.with.bad.url.js"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",

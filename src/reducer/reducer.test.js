@@ -18,13 +18,13 @@ describe("unit tests for reducers ", () => {
     expect(state).toBe(payload.hasErrorOccuredWhileFetchingListOfHouses);
   });
 
-  it("Given that state is false, then isFetchingListOfHouses should be false", () => {
+  it("Given that state is true, then isFetchingListOfHouses should be true", () => {
     const payload = {
       type: APPLICATION_IS_FETCHING_LIST_OF_HOUSES,
-      isFetchingListOfHouses: false
+      isFetchingListOfHouses: true
     };
 
-    const state = isFetchingListOfHouses(false, payload);
+    const state = isFetchingListOfHouses(true, payload);
     expect(state).toBe(payload.isFetchingListOfHouses);
   });
 });

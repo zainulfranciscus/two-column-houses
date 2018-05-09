@@ -58,4 +58,24 @@ describe("unit test for list of houses decorator", () => {
       listOfHouses[RIGHT_COLUMN_HOUSES_PROPERTY_NAME]
     );
   });
+
+  it("it should return true, because it matches the provided house id", () => {
+    const houseExist = listOfHousesDecorator(
+      listOfHouses
+    ).existInTheRightColumn(aHouse);
+
+    expect(houseExist).toBeTruthy();
+  });
+
+    it("it should return false, because it does not match any of the house id in the right column", () => {
+
+        const house = Object.assign({}, aHouse);
+        house.id = 5;
+
+        const matchingHouse = listOfHousesDecorator(
+            listOfHouses
+        ).existInTheRightColumn(house);
+
+        expect(matchingHouse).toBeFalsy();
+    });
 });

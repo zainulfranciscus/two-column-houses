@@ -24,6 +24,14 @@ export default function listOfHousesDecorator(data) {
 
       return data[RIGHT_COLUMN_HOUSES_PROPERTY_NAME];
     },
+    existInTheRightColumn: function(aHouse) {
+        const rightColumnHouses = this.rightColumnHouses();
+        const found = rightColumnHouses.find((house) => {
+          return houseDecorator(house).id() === houseDecorator(aHouse).id();
+        });
+
+        return !doesNotExist(found);
+    },
     removeHouseFromTheRightColumn: function(house) {
       const id = houseDecorator(house).id();
       const rightColumnHouses = this.rightColumnHouses();

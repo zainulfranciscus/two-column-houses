@@ -1,6 +1,6 @@
 export const MOVE_HOUSE_TO_RIGHT_COLUMN = "moving_house_to_the_right_column";
 export const MOVE_HOUSE_TO_LEFT_COLUMN = "moving_house_to_the_left_column";
-export const HOUSE_TO_BE_MOVED = "house";
+export const HOUSE_TO_BE_ADDED_TO_RIGHT_COLUMN = "house";
 export const ACTION_TYPE = "type";
 
 export function moveHouseToTheLeftColumn(aHouse) {
@@ -32,7 +32,7 @@ export function moveHouseActionBuilder() {
     build() {
       let action = {};
       action[ACTION_TYPE] = type;
-      action[HOUSE_TO_BE_MOVED] = house;
+      action[HOUSE_TO_BE_ADDED_TO_RIGHT_COLUMN] = house;
 
       return action;
     }

@@ -1,4 +1,5 @@
 import houseDecorator, { doesNotExist } from "./house.decorator";
+import "babel-polyfill";
 
 export const LEFT_COLUMN_HOUSES_PROPERTY_NAME = "results";
 export const RIGHT_COLUMN_HOUSES_PROPERTY_NAME = "saved";
